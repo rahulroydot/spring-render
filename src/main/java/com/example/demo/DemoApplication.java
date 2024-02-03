@@ -10,4 +10,15 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+
+	@RestController
+	public class DemoController {
+
+		@GetMapping("/hello")
+		public String hello(){
+
+			return "Hello Demo";
+		}
+	}
+
 }
